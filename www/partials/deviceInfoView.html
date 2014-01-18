@@ -1,0 +1,37 @@
+<div class="topcoat-navigation-bar" ng-controller="HomeCtrl">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" ng-click="slidePage('/','modal')">
+            <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Device Info</h1>
+    </div>
+</div>
+
+<div class="details pad padtop" ng-controller="DeviceCtrl">
+    <div class="arow">
+        <div class='aitem'><h2>Name:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.name" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Model:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.model" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>UUID:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.uuid" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Cordova:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.cordova" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Platform:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.platform" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Version:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="device.version" placeholder="" disabled></div>
+    </div>
+</div>

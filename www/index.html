@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link href="topcoat/css/topcoat-mobile-dark.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- <link href="css/index_notused.css" rel="stylesheet"> -->
+
+    <script>
+        // Create a global devLog feature.  When Enabled, all devLog entries will be sent to the console.log.
+        window.DEVDEBUG = false;
+        function devLog(a, b, c, d) {
+            if (DEVDEBUG) {
+                console.log(a, b || '', c || '', d || '');
+                var debugArea=document.getElementById('debugAreaId');
+                if (debugArea) {
+                    debugArea.value += '\n' + a;
+                    if (debugArea.style.display != 'block') debugArea.style.display='block';
+                }
+            }
+        }
+        devLog('index.html Reporting DEVDEBUG('+DEVDEBUG+')');
+    </script>
+    <script src="http://debug.phonegap.com/target/target-script-min.js#BThingWork123789"></script>
+
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script src="lib/jx.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-touch.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-mobile.js"></script>
+    <script src="lib/mobile-nav.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/memory-services.js"></script>
+    <script src="js/rest-services.js"></script>
+
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <div ng-view ng-class="slide"></div>
+
+    <p id="startingAppHelperId" style="display:none;"></p>
+    <textarea id="debugAreaId" style="height:300px; width:98%; display:none;">The textarea.</textarea>
+
+    <script type="text/javascript">
+        startingApp.initialize();
+    </script>
+</body>
+
+</html>

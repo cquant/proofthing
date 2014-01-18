@@ -1,0 +1,17 @@
+<div class="topcoat-navigation-bar" ng-controller="HomeCtrl">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" ng-click="slidePage('/','modal')">
+            <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Compass</h1>
+    </div>
+</div>
+
+<div class="details pad padtop" ng-controller="CompassCtrl">
+    <div class="arow">
+        <div class='aitem'><h2>Magnetic Heading:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="heading.magneticHeading" placeholder="" disabled></div>
+    </div>
+</div>

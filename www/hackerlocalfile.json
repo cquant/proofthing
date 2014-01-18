@@ -1,0 +1,268 @@
+{
+    "nextId":null,
+    "items":[
+        {
+            "title":"Why is a minute divided into 60 seconds, an hour into 60 minutes?",
+            "url":"http://www.scientificamerican.com/article.cfm?id=experts-time-division-days-hours-minutes",
+            "id":7062671,
+            "commentCount":14,
+            "points":34,
+            "postedAgo":"2 hours ago",
+            "postedBy":"smalu"
+        },
+        {
+            "title":"Living a High-DPI desktop lifestyle can be painful on Windows",
+            "url":"http://www.hanselman.com/blog/LivingAHighDPIDesktopLifestyleCanBePainful.aspx",
+            "id":7062208,
+            "commentCount":70,
+            "points":99,
+            "postedAgo":"5 hours ago",
+            "postedBy":"henrik_w"
+        },
+        {
+            "title":"Ampere to get rational redefinition",
+            "url":"http://www.nature.com/news/ampere-to-get-rational-redefinition-1.14512",
+            "id":7062835,
+            "commentCount":1,
+            "points":13,
+            "postedAgo":"1 hour ago",
+            "postedBy":"feelthepain"
+        },
+        {
+            "title":"Show HN: Remote control your digital life from Twitter",
+            "url":"http://ctrltwit.com/",
+            "id":7062862,
+            "commentCount":13,
+            "points":9,
+            "postedAgo":"1 hour ago",
+            "postedBy":"shaharsol"
+        },
+        {
+            "title":"How does SSL work?",
+            "url":"http://security.stackexchange.com/questions/20803/how-does-ssl-work",
+            "id":7062226,
+            "commentCount":14,
+            "points":46,
+            "postedAgo":"4 hours ago",
+            "postedBy":"gozzoo"
+        },
+        {
+            "title":"Why Are There So Many Pythons?",
+            "url":"http://www.toptal.com/python/why-are-there-so-many-pythons",
+            "id":7061360,
+            "commentCount":59,
+            "points":129,
+            "postedAgo":"10 hours ago",
+            "postedBy":"akbarnama"
+        },
+        {
+            "title":"Mother",
+            "url":"https://sen.se/store/mother/?utm_expid=78993385-1.X-oIkUsIR8aRPG13DPrvIg.0",
+            "id":7060386,
+            "commentCount":156,
+            "points":215,
+            "postedAgo":"14 hours ago",
+            "postedBy":"rkrkrk21"
+        },
+        {
+            "title":"Public speaking is tough",
+            "url":"http://speaking.io",
+            "id":7059303,
+            "commentCount":91,
+            "points":293,
+            "postedAgo":"17 hours ago",
+            "postedBy":"FredericJ"
+        },
+        {
+            "title":"MapGive - Open Mapping from the US State Dept.",
+            "url":"http://mapgive.state.gov/the-cause/",
+            "id":7062969,
+            "commentCount":0,
+            "points":4,
+            "postedAgo":"39 minutes ago",
+            "postedBy":"chippy"
+        },
+        {
+            "title":"The Periodic Table of Rust Types",
+            "url":"http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/",
+            "id":7060951,
+            "commentCount":49,
+            "points":117,
+            "postedAgo":"12 hours ago",
+            "postedBy":"lifthrasiir"
+        },
+        {
+            "title":"US Supreme Court declines to hear appeal by patent troll",
+            "url":"http://www.inc.com/jeremy-quittner/supreme-court-deals-blow-to-troll.html",
+            "id":7056614,
+            "commentCount":83,
+            "points":428,
+            "postedAgo":"1 day ago",
+            "postedBy":"dded"
+        },
+        {
+            "title":"Net neutrality is half-dead: Court strikes down FCC’s anti-blocking rules",
+            "url":"http://arstechnica.com/tech-policy/2014/01/net-neutrality-is-half-dead-court-strikes-down-fccs-anti-blocking-rules/",
+            "id":7057634,
+            "commentCount":114,
+            "points":301,
+            "postedAgo":"21 hours ago",
+            "postedBy":"shawndumas"
+        },
+        {
+            "title":"PSD to HTML is Dead",
+            "url":"http://blog.teamtreehouse.com/psd-to-html-is-dead",
+            "id":7058121,
+            "commentCount":155,
+            "points":262,
+            "postedAgo":"20 hours ago",
+            "postedBy":"nickpettit"
+        },
+        {
+            "title":"Ripple – Chat with people nearby",
+            "url":"http://ripplechat.io",
+            "id":7061785,
+            "commentCount":34,
+            "points":42,
+            "postedAgo":"7 hours ago",
+            "postedBy":"jamztang"
+        },
+        {
+            "title":"AMD launches Kaveri processors aimed at starting a computing revolution",
+            "url":"http://venturebeat.com/2014/01/14/amd-launches-kaveri-processors-aimed-at-starting-a-computing-revolution/",
+            "id":7057733,
+            "commentCount":176,
+            "points":282,
+            "postedAgo":"21 hours ago",
+            "postedBy":"mactitan"
+        },
+        {
+            "title":"Show HN: Funded.io rapid prototype",
+            "url":"http://funded.io",
+            "id":7059919,
+            "commentCount":52,
+            "points":145,
+            "postedAgo":"15 hours ago",
+            "postedBy":"bottompair"
+        },
+        {
+            "title":"Swine flu deaths rise to 17 in Bay Area",
+            "url":"http://www.sfgate.com/health/article/Swine-flu-deaths-rise-to-17-in-Bay-Area-5141467.php",
+            "id":7061934,
+            "commentCount":18,
+            "points":33,
+            "postedAgo":"6 hours ago",
+            "postedBy":"rahimnathwani"
+        },
+        {
+            "title":"VC Pitches in a Year or Two",
+            "url":"http://www.avc.com/a_vc/2014/01/vc-pitches-in-a-year-or-two.html",
+            "id":7062923,
+            "commentCount":0,
+            "points":3,
+            "postedAgo":"53 minutes ago",
+            "postedBy":"SethMurphy"
+        },
+        {
+            "title":"Project Euler",
+            "url":"http://projecteuler.net/",
+            "id":7056888,
+            "commentCount":129,
+            "points":275,
+            "postedAgo":"23 hours ago",
+            "postedBy":"gprasanth"
+        },
+        {
+            "title":"Dogecoin now accounts for more transactions than any other cryptocurrency",
+            "url":"http://bitinfocharts.com",
+            "id":7061830,
+            "commentCount":109,
+            "points":104,
+            "postedAgo":"7 hours ago",
+            "postedBy":"acangiano"
+        },
+        {
+            "title":"Requirements for DRM in HTML are confidential",
+            "url":"http://lists.w3.org/Archives/Public/public-restrictedmedia/2014Jan/0060.html",
+            "id":7055016,
+            "commentCount":367,
+            "points":545,
+            "postedAgo":"1 day ago",
+            "postedBy":"duncan_bayne"
+        },
+        {
+            "title":"Rails Consulting for Fun and Profit",
+            "url":"http://joshsymonds.com/blog/2014/01/14/rails-consulting-for-fun-and-profit/",
+            "id":7060385,
+            "commentCount":50,
+            "points":87,
+            "postedAgo":"14 hours ago",
+            "postedBy":"Veraticus"
+        },
+        {
+            "title":"WikiLeaks releases Trans-Pacific Partnership (TPP) Environment draft",
+            "url":"http://wikileaks.org/tpp-enviro/",
+            "id":7062229,
+            "commentCount":15,
+            "points":90,
+            "postedAgo":"4 hours ago",
+            "postedBy":"mwilcox"
+        },
+        {
+            "title":"Google\u0027s new business model",
+            "url":"http://stratechery.com/",
+            "id":7059548,
+            "commentCount":46,
+            "points":108,
+            "postedAgo":"16 hours ago",
+            "postedBy":"ben336"
+        },
+        {
+            "title":"Principles for making things for the web",
+            "url":"https://github.com/veltman/principles",
+            "id":7060116,
+            "commentCount":4,
+            "points":84,
+            "postedAgo":"15 hours ago",
+            "postedBy":"watermel0n"
+        },
+        {
+            "title":"Everyone can now track down noisy tabs",
+            "url":"http://chrome.blogspot.com/2014/01/everyone-can-now-track-down-noisy-tabs.html",
+            "id":7059170,
+            "commentCount":98,
+            "points":121,
+            "postedAgo":"17 hours ago",
+            "postedBy":"cleverjake"
+        },
+        {
+            "title":"N.S.A. Devises Radio Pathway Into Computers",
+            "url":"http://www.nytimes.com/2014/01/15/us/nsa-effort-pries-open-computers-not-connected-to-internet.html?partner=rss&amp;emc=rss&amp;smid=tw-nytimesworld",
+            "id":7061012,
+            "commentCount":114,
+            "points":164,
+            "postedAgo":"12 hours ago",
+            "postedBy":"nealyoung"
+        },
+        {
+            "title":"America\u0027s Dwindling Economic Freedom",
+            "url":"http://online.wsj.com/news/articles/SB10001424052702303848104579308811265028066",
+            "id":7062081,
+            "commentCount":34,
+            "points":21,
+            "postedAgo":"5 hours ago",
+            "postedBy":"f_salmon"
+        },
+        {
+            "title":"Asm.js AOT compilation and startup performance",
+            "url":"https://blog.mozilla.org/luke/2014/01/14/asm-js-aot-compilation-and-startup-performance/",
+            "id":7057713,
+            "commentCount":52,
+            "points":144,
+            "postedAgo":"21 hours ago",
+            "postedBy":"bzbarsky"
+        }
+    ],
+    "version":"1.0",
+    "cachedOnUTC":"\/Date(1389791887091)\/"
+}

@@ -1,0 +1,39 @@
+<div class="topcoat-navigation-bar" ng-controller="HomeCtrl">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" ng-click="slidePage('/','modal')">
+            <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Notification</h1>
+    </div>
+</div>
+
+<div class="details pad" ng-controller="NotificationCtrl">
+    <p>
+      <h2 class="padbot"><p>Native Alert</p></h2>
+      <a class="topcoat-button--cta" ng-click="alertNotify()">Alert</a>
+      <input type="text" class="topcoat-text-input" ng-model="notification.alertTitle" placeholder="Alert title">
+      <input type="text" class="topcoat-text-input" ng-model="notification.alertMessage" placeholder="Alert msg">
+    </p>
+    <hr>
+
+    <p>
+        <h2 class="padbot"><p>Native Confirmation Dialog</p></h2>
+        <a class="topcoat-button--cta" ng-click="confirmNotify()">Confirm</a>
+        <input type="text" class="topcoat-text-input" ng-model="notification.confirmationTitle" placeholder="Question title">
+        <input type="text" class="topcoat-text-input" ng-model="notification.confirmationMessage" placeholder="Confirmation msg">
+    </p>
+    <hr>
+
+    <p>
+    <h2 class="padbot"><p>Play a Sound</p></h2>
+    <a class="topcoat-button--cta" ng-click="beepNotify()">Beep</a>
+    </p>
+    <hr>
+
+    <p>
+        <h2 class="padbot"><p>Vibrate your device</p></h2>
+        <a class="topcoat-button--cta" ng-click="vibrateNotify()">Vibrate</a>
+    </p>
+</div>

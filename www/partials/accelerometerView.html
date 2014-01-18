@@ -1,0 +1,30 @@
+<div class="topcoat-navigation-bar" ng-controller="HomeCtrl">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" ng-click="slidePage('/','modal')">
+            <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+            <!-- <span class="topcoat-icon home-icon"></span> -->
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Accelerometer</h1>
+    </div>
+</div>
+
+<div class="details pad padtop" ng-controller="AccelerCtrl">
+    <div class="arow">
+        <div class='aitem'><h2>X:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="acceleration.x" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Y:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="acceleration.y" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Z:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="acceleration.z" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Timestamp:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input" ng-model="acceleration.timestamp" placeholder="" disabled></div>
+    </div>
+</div>

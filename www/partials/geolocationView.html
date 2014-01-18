@@ -1,0 +1,48 @@
+<!--<ng:include src="'partials/header.html'"></ng:include>-->
+<div class="topcoat-navigation-bar" ng-controller="HomeCtrl">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" ng-click="slidePage('/','modal')">
+            <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Geolocation</h1>
+    </div>
+</div>
+
+<div class="details pad padtop" ng-controller="GeolocationCtrl">
+    <div class="arow">
+        <div class='aitem'><h2>Latitude:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.latitude" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Longitude:</h2></div>
+        <div class='aitem'> <input type="text" class="topcoat-text-input"  ng-model="position.coords.longitude" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Altitude:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.altitude" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Accuracy:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.accuracy" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>AltitudeAccuracy:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.altitudeAccuracy" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Heading:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.heading" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Speed:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.coords.speed" placeholder="" disabled></div>
+    </div>
+    <div class="arow">
+        <div class='aitem'><h2>Timestamp:</h2></div>
+        <div class='aitem'><input type="text" class="topcoat-text-input"  ng-model="position.timestamp" placeholder="" disabled></div>
+    </div>
+</div>
+
+
