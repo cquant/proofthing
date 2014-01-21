@@ -72,9 +72,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/viewCompass', {templateUrl: 'partials/compassView.html'});
     $routeProvider.when('/viewHackerNews', {templateUrl: 'partials/hackerNewsView.html'});
     $routeProvider.when('/viewHackerNews2', {templateUrl: 'partials/hackerNews2View.html'});
-    $routeProvider.when('/viewHackerNews3', {templateUrl: 'partials/hackerNews3View.html'});
     $routeProvider.when('/viewHackerNews4', {templateUrl: 'partials/hackerNews4View.html'});
-    $routeProvider.when('/viewTestScroller', {templateUrl: 'partials/testScrollerView.html'});
     $routeProvider.when('/employees', {templateUrl: 'partials/employee-list.html', controller: 'EmployeeListCtrl'});
     $routeProvider.when('/employees/:employeeId', {templateUrl: 'partials/employee-detail.html', controller: 'EmployeeDetailCtrl'});
     $routeProvider.when('/employees/:employeeId/reports', {templateUrl: 'partials/report-list.html', controller: 'ReportListCtrl'});

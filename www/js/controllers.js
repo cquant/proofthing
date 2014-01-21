@@ -149,12 +149,10 @@ myControllers.controller('CompassCtrl', ['$scope', function ($scope) {
 myControllers.controller('HackerNewsCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
     devLog('controllers.HackerNewsCtrl START');
     // Load in data from hacker news unless we already have
-    devLog('controllers.HackerNewsCtrl before $rootScope.hackerItems='+$rootScope.hackerItems);
     if (!$rootScope.hackerItems) {
         devLog('controllers.HackerNewsCtrl data request http://api.ihackernews.com/page');
         jx.load('http://api.ihackernews.com/page',function(data){
-            devLog('controllers.HackerNewsCtrl data returned.');
-            //devLog('controllers.HackerNewsCtrl data ' + JSON.stringify(data));
+            devLog('controllers.HackerNewsCtrl data returned. ' + JSON.stringify(data));
             $rootScope.hackerItems = data.items;
             $scope.$apply();
         },'json');
@@ -172,56 +170,23 @@ myControllers.controller('HackerNewsCtrl', ['$scope', '$rootScope', function ($s
 myControllers.controller('HackerNews2Ctrl', ['$scope', '$rootScope', 'HackerNewsSvc', function ($scope, $rootScope, HackerNewsSvc) {
     devLog('controllers.HackerNews2Ctrl START');
     // Load in data from hacker news unless we already have
-    devLog('controllers.HackerNews2Ctrl before $rootScope.hackerItems2='+$rootScope.hackerItems2);
     if (!$rootScope.hackerItems2) {
         devLog('controllers.HackerNews2Ctrl data get next');
         $rootScope.hackerItems2 = {};
         HackerNewsSvc.get({}, function(response) {
             // Assign the response INSIDE the callback
-            devLog('controllers.HackerNews2Ctrl data returned.');
             devLog('controllers.HackerNews2Ctrl data returned. ' + JSON.stringify(response));
             $rootScope.hackerItems2 = response.items;
             $scope.$apply();
         }, function(responseErr) {
-            devLog('controllers.HackerNews2Ctrl the other method responseErr. ' + JSON.stringify(responseErr));
+            devLog('controllers.HackerNews2Ctrl responseErr. ' + JSON.stringify(responseErr));
         });
      } else {
         devLog('controllers.HackerNews2Ctrl data already loaded');
     }
-    devLog('controllers.HackerNews2Ctrl End Locator');
 
     $scope.loadItem = function(item) {
         devLog('controllers.HackerNews2Ctrl.loadItem  item('+item+')');
-        navigator.notification.alert(item.url,function() {devLog("Alert success")},"The URL...","Close");
-    };
-}]);
-
-myControllers.controller('HackerNews3Ctrl', ['$scope', '$rootScope', '$http', function ($scope, $rootScope, $http) {
-    devLog('controllers.HackerNews3Ctrl START');
-    // Load in data from hacker news unless we already have
-    devLog('controllers.HackerNews3Ctrl before $rootScope.hackerItems2='+$rootScope.hackerItems3);
-    if (!$rootScope.hackerItems3) {
-        devLog('controllers.HackerNews3Ctrl data request http://api.ihackernews.com/page');
-
-        $http.defaults.useXDomain = true;
-
-        //Remove the header used to identify ajax call  that would prevent CORS from working
-        delete $http.defaults.headers.common['X-Requested-With'];
-
-        $rootScope.hackerItems3 = {};
-        $http.get("http://api.ihackernews.com/page").success(function(response) {
-            devLog("controllers.HackerNews3Ctrl Success " + result);
-            $rootScope.hackerItems3 = response.items;
-        }).error(function(error) {
-            devLog("controllers.HackerNews3Ctrl error " + error);
-        });
-
-    } else {
-        devLog('controllers.HackerNews3Ctrl data already loaded');
-    }
-
-    $scope.loadItem = function(item) {
-        devLog('controllers.HackerNews3Ctrl.loadItem  item('+item+')');
         navigator.notification.alert(item.url,function() {devLog("Alert success")},"The URL...","Close");
     };
 }]);
