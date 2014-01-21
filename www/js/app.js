@@ -63,6 +63,7 @@ devLog('app Populating $routeProvider');
 myApp.config(['$routeProvider', function ($routeProvider) {
     //Add the route definitions to the $route service
     $routeProvider.when('/', {templateUrl: 'partials/homeView.html', controller: 'HomeCtrl'});
+    $routeProvider.when('/viewSendMessage', {templateUrl: 'partials/sendMessageView.html'});
     $routeProvider.when('/viewNotification', {templateUrl: 'partials/notificationView.html'});
     $routeProvider.when('/viewGeolocation', {templateUrl: 'partials/geolocationView.html'});
     $routeProvider.when('/viewAcceleration', {templateUrl: 'partials/accelerometerView.html'});

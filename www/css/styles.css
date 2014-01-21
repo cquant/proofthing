@@ -264,7 +264,7 @@ ul {
     transform: translateX(100%);
 }
 
-p, h1, h2, h3, p, ul, li {
+p, h1, h2, h3, h4, h5, h6, p, ul, li {
     color: #c6c8c8;
 }
 
@@ -316,4 +316,12 @@ p, h1, h2, h3, p, ul, li {
     -o-flex: 1;
     margin: auto 10px;
     border-radius: 5px;
+}
+
+.text-warning {
+    color: yellow;
+}
+
+.text-error {
+    color: red;
 }

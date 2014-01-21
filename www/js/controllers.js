@@ -262,6 +262,46 @@ myControllers.controller('CameraCtrl', ['$scope', function ($scope) {
     };
 }]);
 
+myControllers.controller('SendMessageCtrl', ['$scope', function ($scope) {
+    devLog('controllers.SendMessageCtrl START');
+
+    $scope.sendMessageText = '';
+    $scope.sendMessageMaxLen = 50;
+    var WARN_THRESHOLD = 10;
+
+    $scope.remaining = function () {
+        return $scope.sendMessageMaxLen - $scope.sendMessageText.length;
+    };
+
+    $scope.hasValidLength = function () {
+        devLog('controllers.SendMessageCtrl.hasValidLength START');
+        return $scope.sendMessageText.length > 0 && $scope.sendMessageText.length <= $scope.sendMessageMaxLen;
+    };
+
+    $scope.shouldWarn = function () {
+        devLog('controllers.SendMessageCtrl.shouldWarn START');
+        return $scope.remaining() < WARN_THRESHOLD;
+    };
+
+    $scope.shouldError = function () {
+        devLog('controllers.SendMessageCtrl.shouldError START');
+        return $scope.sendMessageText.length > $scope.sendMessageMaxLen;
+    };
+
+    $scope.clear = function () {
+        devLog('controllers.SendMessageCtrl.clear START');
+        $scope.sendMessageText = '';
+        return;
+    };
+
+    $scope.send = function () {
+        devLog('controllers.SendMessageCtrl.send START');
+        $scope.sendMessageText = '';
+        return ;
+    };
+
+}]);
+
 
 myControllers.controller('TemplateCtrl', ['$scope', function ($scope) {
     devLog('controllers.TemplateCtrl START');
@@ -285,5 +325,6 @@ myControllers.controller('ReportListCtrl', ['$scope', '$routeParams', 'Report', 
         // Retrieve all the DirectReports for the given employeeID
         $scope.employees = Report.query({employeeId: $routeParams.employeeId});
     }]);
+
 
 devLog('controllers LOADING-COMPLETED');
