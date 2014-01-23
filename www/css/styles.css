@@ -325,3 +325,10 @@ p, h1, h2, h3, h4, h5, h6, p, ul, li {
 .text-error {
     color: red;
 }
+
+
+.topcoat-textarea,
+.topcoat-textarea--large {
+    padding: 1rem;
+    font-size: 1.5rem;
+}

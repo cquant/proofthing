@@ -17,7 +17,7 @@
     <!-- <span ng-class="{'text-warning' : shouldWarn() }">Remaining: {{remaining()}}</span> -->
     <p><span ng-class="{'text-warning' : shouldWarn(), 'text-error' : shouldError() }">Remaining: {{remaining()}}</span></p>
     <div class="row">
-        <textarea ng-model="sendMessageText" class="topcoat-textarea" rows="3" cols="26" placeholder="Enter Message">{{message}}</textarea>
+        <textarea ng-model="sendMessageText" class="topcoat-textarea" style="height : 160px; width : 98%;" placeholder="Enter Message">{{sendMessageText}}</textarea>
     </div>
     <div class="row" style="margin-top: 15px;">
         <button class="topcoat-button" ng-click="send()" ng-disabled="!hasValidLength()">Send</button>
