@@ -146,26 +146,6 @@ myControllers.controller('CompassCtrl', ['$scope', function ($scope) {
     },function(e) { console.log("Error finding compass " + e.code) });
 }]);
 
-myControllers.controller('HackerNewsCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
-    devLog('controllers.HackerNewsCtrl START');
-    // Load in data from hacker news unless we already have
-    if (!$rootScope.hackerItems) {
-        devLog('controllers.HackerNewsCtrl data request http://api.ihackernews.com/page');
-        jx.load('http://api.ihackernews.com/page',function(data){
-            devLog('controllers.HackerNewsCtrl data returned. ' + JSON.stringify(data));
-            $rootScope.hackerItems = data.items;
-            $scope.$apply();
-        },'json');
-
-    } else {
-        devLog('controllers.HackerNewsCtrl data already loaded');
-    }
-
-    $scope.loadItem = function(item) {
-        devLog('controllers.HackerNewsCtrl.loadItem  item('+item+')');
-        navigator.notification.alert(item.url, function() {devLog("Alert success")},"The URL...","Close");
-    };
-}]);
 
 myControllers.controller('HackerNews2Ctrl', ['$scope', '$rootScope', 'HackerNewsSvc', function ($scope, $rootScope, HackerNewsSvc) {
     devLog('controllers.HackerNews2Ctrl START');
